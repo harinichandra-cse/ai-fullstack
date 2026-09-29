@@ -1,0 +1,12 @@
+import ollama
+response = ollama.chat(
+    model= "llama3.2:3b",
+
+    messages=[
+        {
+        "role": "user",
+        "content": "name only main types of aic"
+        }
+    ]
+)
+print(response["message"]["content"])
